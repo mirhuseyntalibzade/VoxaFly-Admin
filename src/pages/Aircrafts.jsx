@@ -19,6 +19,7 @@ const AircraftsContent = () => {
   const [aircraftToDelete, setAircraftToDelete] = useState(null);
   const [showDetails, setShowDetails] = useState(false);
   const [selectedAircraft, setSelectedAircraft] = useState(null);
+  const [error, setError] = useState('')
   const [formData, setFormData] = useState({
     aircraft: {
       name: '',

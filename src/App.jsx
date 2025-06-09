@@ -11,6 +11,7 @@ import { DashboardContent } from './pages/Dashboard';
 import NotFound from './pages/NotFound';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
+import Blogs from './pages/Blogs';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="countries" element={<CountriesContent />} />
           <Route path="aircrafts" element={<AircraftsContent />} />
           <Route path="flights" element={<FlightsContent />} />
+          <Route path="blogs" element={<Blogs />} />
         </Route>
         <Route path="/" element={<Navigate to="/admin/dashboard" replace />} />
         <Route path="*" element={<NotFound />} />
